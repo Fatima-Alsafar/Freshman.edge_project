@@ -2,12 +2,21 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 class OnlinePharmacy(BaseHTTPRequestHandler):
 
-
+# home tab - www.w3schools.com
     def make_header(self):
         return( "<html>"
                 "<head>"
                 "<title>F~OnlinePharmacy</title>"
+                "<meta name='viewport' content = 'width=device-width, initial-scale=1'>"
+                "<link rel='stylesheet' href = 'localhost:9011/home'>"
+                "<style>"
+                ".btn {background-color:#009999; border: none; color: white; padding: 15xp 18xp; font-size: 16xp; cursor: pointer;}"
+                "<.btn:hover {background-color: #009999;}"
+                "</style>"
                 "</head>"
+                "<body style='background-color:#f7ffe6;'>"
+                "<button class='btn'><i class='fa fa-home'>Home</i></button>"
+                "</a>"
                 "</body>")
 
     def make_footer(self):
